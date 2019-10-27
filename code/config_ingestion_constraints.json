@@ -1,0 +1,4 @@
+{
+"client1":{"max_file_size":550,"max_files_number":3},
+"client2":{"max_file_size":500,"max_files_number":2}
+}
