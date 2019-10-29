@@ -13,7 +13,8 @@ app_nearrealtime = app.namespace('nearrealtime', description='APIs concerning me
 class ingestion(Resource):
     def post(self):
         client_id = request.files['client_id'].read().decode("utf-8")
-        filename = 'code/client-input-directory/'+str(datetime.now()).replace(':', '-')+'--'+client_id+'.csv'
+        file_extension = request.files['file'].filename.split('.')[-1]
+        filename = 'code/client-input-directory/'+str(datetime.now()).replace(':', '-')+'--'+client_id+'.'+file_extension
         request.files['file'].save(filename)
         return ''
 

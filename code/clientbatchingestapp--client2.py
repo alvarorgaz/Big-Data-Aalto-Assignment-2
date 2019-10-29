@@ -7,7 +7,7 @@ def ingestion(batch_path, client_id='client2'):
     database = mongo_client['google_play_store']
     table = database[client_id]
     
-    batch = pd.read_csv(batch_path)
+    batch = pd.read_json(batch_path)
     start = time.time()
     request = table.insert(batch.to_dict(orient='records'))
     end = time.time()
