@@ -1,6 +1,4 @@
-import os, shutil, argparse, json, time, pandas
-
-# python code/mysimbdp-fetchdata.py --micro_batching "Yes"
+import os, shutil, argparse, json, pandas
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -19,11 +17,9 @@ def find_client_id(batch_filename):
     file_extension = find_extension(batch_filename)
     client_id_end = batch_filename.find('.'+file_extension, client_id_start)
     return batch_filename[client_id_start:client_id_end]
-	
+
 def check_ingestion_constraints(first_batch_filename, batches_filenames):
-    print(first_batch_filename)
     client_id = find_client_id(first_batch_filename)
-    print(os.path.getsize('code/client-input-directory/'+first_batch_filename),ingestion_constraints[client_id]['max_file_size'])
     file_extension = find_extension(first_batch_filename)
     OK_type = file_extension==ingestion_constraints[client_id]['file_type']
     OK_number = sum([client_id==find_client_id(batch_filename) for batch_filename in batches_filenames])<=ingestion_constraints[client_id]['max_files_number']
@@ -37,21 +33,16 @@ def microbatching(first_batch_filename):
     max_file_size = ingestion_constraints[client_id]['max_file_size']
     number_microbatches = file_size//max_file_size+1
     if file_extension=='csv':
-        print("")
         batch = pandas.read_csv('code/client-input-directory/'+first_batch_filename)
     if file_extension=='json':
-        print("")
         batch = pandas.read_json('code/client-input-directory/'+first_batch_filename)
-    print(file_extension)
     for i in range(number_microbatches):
         microbatch = batch.iloc[int(batch.shape[0]*i/number_microbatches):int(batch.shape[0]*(i+1)/number_microbatches),:]
         microbatch_filename = 'code/client-stage-directory/'+first_batch_filename.replace('.'+file_extension,'')+'--microbatch'+str(i+1)+'.'+file_extension
-        print(microbatch_filename)
         if file_extension=='csv':
             microbatch.to_csv(microbatch_filename)
         elif file_extension=='json':
             microbatch.to_json(microbatch_filename)
-    print(first_batch_filename)
     os.remove('code/client-input-directory/'+first_batch_filename)
 
 while True:
@@ -59,8 +50,6 @@ while True:
     if len(batches_filenames)>0:
         first_batch_filename = batches_filenames[0]
         OK_type, OK_number, OK_size = check_ingestion_constraints(first_batch_filename, batches_filenames)
-        print(first_batch_filename)
-        print(OK_type, OK_number, OK_size)
         if OK_type and OK_number and OK_size:
             shutil.move('code/client-input-directory/'+first_batch_filename, 'code/client-stage-directory/'+first_batch_filename)
         elif OK_type and OK_number and not OK_size and args.micro_batching=='Yes':

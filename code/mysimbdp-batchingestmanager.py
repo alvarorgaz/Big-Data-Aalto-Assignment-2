@@ -1,11 +1,8 @@
-import os, importlib, time
-import pandas as pd
-
-# python code\mysimbdp-batchingestmanager.py >> logs/batch_ingestion.log
+import os, importlib
 
 def find_extension(filename):
     return filename.split('.')[-1]
-	
+
 def find_client_id(batch_filename):
     file_extension = find_extension(batch_filename)
     client_id_start = batch_filename.find('--client')+2
