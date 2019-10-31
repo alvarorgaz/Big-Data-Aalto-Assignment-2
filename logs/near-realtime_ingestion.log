@@ -1,0 +1,29 @@
+For client1 the ingestion report 0 is:
+ {'collection_size': 330372, 'collection_count': 1000, 'avg_ingestion_time': 0.04209922500000012, 'collection_avgObjSize': 330, 'avg_total_time': 21.004927275000014, 'number_messages': 1000} 
+
+For client1 the ingestion report 1 is:
+ {'collection_size': 656395, 'collection_count': 2000, 'avg_ingestion_time': 0.042000796, 'collection_avgObjSize': 328, 'avg_total_time': 62.12149702300005, 'number_messages': 1000} 
+
+For client1 the ingestion report 0 is:
+ {'collection_size': 1257844, 'collection_count': 3000, 'avg_ingestion_time': 0.04161192999999997, 'collection_avgObjSize': 327, 'avg_total_time': 256.3269539550003, 'number_messages': 1000} 
+
+For client1 the ingestion report 1 is:
+ {'collection_size': 1583867, 'collection_count': 4000, 'avg_ingestion_time': 0.043105573999999966, 'collection_avgObjSize': 327, 'avg_total_time': 298.29772189299996, 'number_messages': 1000} 
+
+For client1 the ingestion report 2 is:
+ {'collection_size': 1909015, 'collection_count': 5000, 'avg_ingestion_time': 0.04068178499999996, 'collection_avgObjSize': 326, 'avg_total_time': 339.7043671380006, 'number_messages': 1000} 
+
+For client1 the ingestion report 3 is:
+ {'collection_size': 2245758, 'collection_count': 6000, 'avg_ingestion_time': 0.04185947799999999, 'collection_avgObjSize': 328, 'avg_total_time': 379.8458660449996, 'number_messages': 1000} 
+
+For client1 the ingestion report 4 is:
+ {'collection_size': 2566016, 'collection_count': 7000, 'avg_ingestion_time': 0.04155124899999998, 'collection_avgObjSize': 327, 'avg_total_time': 421.0696046630005, 'number_messages': 1000} 
+
+For client1 the ingestion report 5 is:
+ {'collection_size': 2881354, 'collection_count': 8000, 'avg_ingestion_time': 0.04200646899999999, 'collection_avgObjSize': 325, 'avg_total_time': 462.25571713200054, 'number_messages': 1000} 
+
+For client1 the ingestion report 6 is:
+ {'collection_size': 3192175, 'collection_count': 9000, 'avg_ingestion_time': 0.041067684999999965, 'collection_avgObjSize': 324, 'avg_total_time': 503.4521506740002, 'number_messages': 1000} 
+
+For client1 the ingestion report 7 is:
+ {'collection_size': 3504021, 'collection_count': 1000, 'avg_ingestion_time': 0.04203652100000001, 'collection_avgObjSize': 323, 'avg_total_time': 544.025661401, 'number_messages': 1000} 

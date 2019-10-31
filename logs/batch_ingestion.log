@@ -1,0 +1,36 @@
+For file "2019-10-31 21-40-25.441357--client2--microbatch2.json" the ingestion report is:
+ {'collection_avgObjSize': 216, 'successful_rows_rate': 1.0, 'collection_count': 6430, 'ingestion_size_local': 981581, 'ingestion_time': 1.0237326622009277, 'collection_size': 1392530, 'successful_rows': 6430} 
+
+For file "2019-10-31 21-40-25.441357--client2--microbatch6.json" the ingestion report is:
+ {'collection_avgObjSize': 221, 'successful_rows_rate': 1.0, 'collection_count': 12860, 'ingestion_size_local': 1039213, 'ingestion_time': 0.9460811614990234, 'collection_size': 2844604, 'successful_rows': 6430} 
+
+For file "2019-10-31 21-40-25.441357--client2--microbatch9.json" the ingestion report is:
+ {'collection_avgObjSize': 224, 'successful_rows_rate': 1.0, 'collection_count': 19289, 'ingestion_size_local': 1077671, 'ingestion_time': 1.007476568222046, 'collection_size': 4332839, 'successful_rows': 6429} 
+
+For file "2019-10-31 21-40-25.441357--client2--microbatch7.json" the ingestion report is:
+ {'collection_avgObjSize': 223, 'successful_rows_rate': 1.0, 'collection_count': 25718, 'ingestion_size_local': 1002892, 'ingestion_time': 1.151113510131836, 'collection_size': 5748478, 'successful_rows': 6429} 
+
+For file "2019-10-31 21-40-25.441357--client2--microbatch10.json" the ingestion report is:
+ {'collection_avgObjSize': 225, 'successful_rows_rate': 1.0, 'collection_count': 32148, 'ingestion_size_local': 1065979, 'ingestion_time': 1.0308260917663574, 'collection_size': 7244437, 'successful_rows': 6430} 
+
+For file "2019-10-31 21-40-25.441357--client2--microbatch1.json" the ingestion report is:
+ {'collection_avgObjSize': 225, 'successful_rows_rate': 1.0, 'collection_count': 38577, 'ingestion_size_local': 1028409, 'ingestion_time': 1.0227534770965576, 'collection_size': 8680915, 'successful_rows': 6429} 
+
+For file "2019-10-31 21-40-25.441357--client2--microbatch5.json" the ingestion report is:
+ {'collection_avgObjSize': 222, 'successful_rows_rate': 1.0, 'collection_count': 45006, 'ingestion_size_local': 957916, 'ingestion_time': 0.9299507141113281, 'collection_size': 10036070, 'successful_rows': 6429} 
+
+For file "2019-10-31 21-40-25.441357--client2--microbatch3.json" the ingestion report is:
+ {'collection_avgObjSize': 223, 'successful_rows_rate': 1.0, 'collection_count': 51435, 'ingestion_size_local': 1039598, 'ingestion_time': 0.9196412563323975, 'collection_size': 11478682, 'successful_rows': 6429} 
+
+For file "2019-10-31 21-40-25.441357--client2--microbatch8.json" the ingestion report is:
+ {'collection_avgObjSize': 222, 'successful_rows_rate': 1.0, 'collection_count': 57865, 'ingestion_size_local': 998166, 'ingestion_time': 1.5925676822662354, 'collection_size': 12888771, 'successful_rows': 6430} 
+
+For file "2019-10-31 21-40-27.874915--client1--microbatch2.csv" the ingestion report is:
+ {'collection_avgObjSize': 328, 'successful_rows_rate': 1.0, 'collection_count': 5421, 'ingestion_size_local': 660286, 'ingestion_time': 1.496335744857788, 'collection_size': 1782188, 'successful_rows': 5421} 
+
+For file "2019-10-31 21-40-25.441357--client2--microbatch4.json" the ingestion report is:
+ {'collection_avgObjSize': 222, 'successful_rows_rate': 1.0, 'collection_count': 64295, 'ingestion_size_local': 1023924, 'ingestion_time': 1.413844347000122, 'collection_size': 14320358, 'successful_rows': 6430} 
+
+For file "2019-10-31 21-40-27.874915--client1--microbatch1.csv" the ingestion report is:
+ {'collection_avgObjSize': 332, 'successful_rows_rate': 1.0, 'collection_count': 10841, 'ingestion_size_local': 738628, 'ingestion_time': 1.8935136795043945, 'collection_size': 3609024, 'successful_rows': 5420} 
+
